@@ -37,22 +37,6 @@ while(<F1>){
                 $node{$v1}++;
 		$node{$v2}++;
 		$label="$e1->$e2($readcnt)";
-		if($e1==3 && $e2==5){
-			print ">FF.$cnam{$v1}.$e1.$cnam{$v2}.$e2\t$v1->$node{$v1}->$clen{$v1}->$cdep{$v1}\t$v2->$node{$v2}->$clen{$v2}->$cdep{$v2}\t$label\n";
-			$fas1=substr(@seq[@t1[1]-1],-($length1),$length1);
-			$fas2=substr(@seq[@t1[3]-1],0,$length2);
-			$fastest1=substr(@seq[@t1[1]-1],0,$length1).substr(@seq[@t1[1]-1],-($length1),$length1);
-			$fastest2=substr(@seq[@t1[3]-1],0,$length2).substr(@seq[@t1[3]-1],-($length2),$length2);
-			$rfastest1=reverse($fastest1);
-			$rfastest2=reverse($fastest2);
-			$rfastest1 =~ tr/ACGTacgt/TGCAtgca/;
-			$rfastest2 =~ tr/ACGTacgt/TGCAtgca/;
-			$rrfastest1=reverse($rfastest1);
-			$rrfastest2=reverse($rfastest2);
-			print $fas1.$fas2."\n";
-
-			
-		}
 		if($e1==5 && $e2==3){
 			print ">RR.$cnam{$v1}.$e1.$cnam{$v2}.$e2\t$v1->$node{$v1}->$clen{$v1}->$cdep{$v1}\t$v2->$node{$v2}->$clen{$v2}->$cdep{$v2}\t$label\n";
 			$fas1=substr(@seq[@t1[1]-1],0,$length1);
@@ -71,9 +55,23 @@ while(<F1>){
 			$rrfastest1=reverse($rfastest1);
 			$rrfastest2=reverse($rfastest2);
 			print $rrfas1.$rfas2."\n";
-
-			
 		}
+		$e1=10;$e2=10;#get other loops out
+		if($e1==3 && $e2==5){
+			print ">FF.$cnam{$v1}.$e1.$cnam{$v2}.$e2\t$v1->$node{$v1}->$clen{$v1}->$cdep{$v1}\t$v2->$node{$v2}->$clen{$v2}->$cdep{$v2}\t$label\n";
+			$fas1=substr(@seq[@t1[1]-1],-($length1),$length1);
+			$fas2=substr(@seq[@t1[3]-1],0,$length2);
+			$fastest1=substr(@seq[@t1[1]-1],0,$length1).substr(@seq[@t1[1]-1],-($length1),$length1);
+			$fastest2=substr(@seq[@t1[3]-1],0,$length2).substr(@seq[@t1[3]-1],-($length2),$length2);
+			$rfastest1=reverse($fastest1);
+			$rfastest2=reverse($fastest2);
+			$rfastest1 =~ tr/ACGTacgt/TGCAtgca/;
+			$rfastest2 =~ tr/ACGTacgt/TGCAtgca/;
+			$rrfastest1=reverse($rfastest1);
+			$rrfastest2=reverse($rfastest2);
+			print $fas1.$fas2."\n";
+		}
+		
 		if($e1==3 && $e2==3){
 			print ">FR.$cnam{$v1}.$e1.$cnam{$v2}.$e2\t$v1->$node{$v1}->$clen{$v1}->$cdep{$v1}\t$v2->$node{$v2}->$clen{$v2}->$cdep{$v2}\t$label\n";
 			$fas1=substr(@seq[@t1[1]-1],-($length1),$length1);
@@ -91,8 +89,6 @@ while(<F1>){
 			$rrfastest1=reverse($rfastest1);
 			$rrfastest2=reverse($rfastest2);
 			print $fas1.$rfas2."\n";
-
-			
 		}
 		if($e1==5 && $e2==5){
 			print ">RF.$cnam{$v1}.$e1.$cnam{$v2}.$e2\t$v1->$node{$v1}->$clen{$v1}->$cdep{$v1}\t$v2->$node{$v2}->$clen{$v2}->$cdep{$v2}\t$label\n";
