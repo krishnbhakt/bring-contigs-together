@@ -131,7 +131,8 @@ sub getgraph{
 	use Graph::Directed;
 	$cg = Graph::Directed->new;   # A directed graph.
 	use GraphViz;
-	$g = GraphViz->new();
+	$g = GraphViz->new();use Graph::Traversal::BFS;
+
 	open(F,$file1);
 	while(<F>){
 		@t1=split(/\s+/);
@@ -157,18 +158,22 @@ sub getgraph{
 				$cg->add_vertex($rv2);
 			}
 			if($readcnt>0){
-		       		$g->add_edge($v1 => $v2, label => $label);			
+	       		$g->add_edge($v1=>$v2,label=>$label);			
 				if($e1==3 && $e2==5){
 					$cg->add_edge($v1,$v2);
+					$cg->add_edge($rv2,$rv1);
 				}
 				if($e1==3 && $e2==3){
 					$cg->add_edge($v1,$rv2);
+					$cg->add_edge($v2,$rv1);
 				}
 				if($e1==5 && $e2==3){
-					$cg->add_edge($rv1,$v2);
+					$cg->add_edge($rv1,$rv2);
+					$cg->add_edge($v2,$v1);
 				}
 				if($e1==5 && $e2==5){
-						$cg->add_edge($rv1,$rv2);
+						$cg->add_edge($rv1,$v2);
+						$cg->add_edge($rv2,$v1);
 				}
 			}
 			#print "$v1->$node{$v1}\t$v2->$node{$v2}\t$label\n";
@@ -176,7 +181,15 @@ sub getgraph{
 	}
 	#open(FOPG,">$file1.gv");
 	#print FOPG $g->as_png;
-
-	print "The graph is $cg	\n";	
+	use Graph::Traversal::DFS;
+    	#$b = Graph::Traversal::BFS->new($cg,%opt);
+	#$b = Graph::Traversal::DFS->new($cg);
+	#$b->dfs; # Do the traversal.
+	@topo=$cg->toposort;
+	#@topo=$cg->MST-Prim;
+	#print "$cg\n$b\n";
+	for($c=0;$c<=$#topo;$c++){	
+		print "@topo[$c]\n";	
+	}
 	close F;
 }
