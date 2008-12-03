@@ -128,10 +128,14 @@ sub printconcatstring {
 }
 
 sub getgraph{
-	use Graph::Directed;
-	$cg = Graph::Directed->new;   # A directed graph.
 	use GraphViz;
 	$g = GraphViz->new();use Graph::Traversal::BFS;
+	use Graph::Directed;
+	use Graph::Undirected;
+	$cg = Graph::Directed->new;   # A directed graph.
+	$wcg = Graph::Directed->new;   # A directed graph with weights.
+	$ucg = Graph::Undirected->new;   # A undirected graph.
+	$wucg = Graph::Undirected->new;   # A undirected graph with weights.
 
 	open(F,$file1);
 	while(<F>){
@@ -147,29 +151,45 @@ sub getgraph{
 		        $node{$v1}++;
 			$node{$v2}++;
 			$label="$e1->$e2($readcnt)";
+			$wucg->add_weighted_path($v1,$readcnt,$v2);
 		        if($node{$v1}<1){
 		               	$g->add_node($v1, label => $v1);
 				$cg->add_vertex($v1);
+				$ucg->add_vertex($v1);
 				$cg->add_vertex($rv1);
 		          }
 	   		if($node{$v2}<1){
 			      	$g->add_node($v2, label => $v2);
+				$ucg->add_vertex($v2);
 				$cg->add_vertex($v2);
 				$cg->add_vertex($rv2);
 			}
 			if($readcnt>0){
 	       		$g->add_edge($v1=>$v2,label=>$label);			
+			$ucg->add_edge($v1,$v2);
 				if($e1==3 && $e2==5){
+					$wcg->add_weighted_path($v1,$readcnt,$v2);
+					$wcg->add_weighted_path($rv2,$readcnt,$rv1);
 					$cg->add_edge($v1,$v2);
+					$cg->add_edge($rv2,$rv1);
 				}
 				if($e1==3 && $e2==3){
+					$wcg->add_weighted_path($v1,$readcnt,$rv2);
+					$wcg->add_weighted_path($v2,$readcnt,$rv1);
 					$cg->add_edge($v1,$rv2);
+					$cg->add_edge($v2,$rv1);
 				}
 				if($e1==5 && $e2==3){
-					$cg->add_edge($rv1,$v2);
+					$wcg->add_weighted_path($rv1,$readcnt,$rv2);
+					$wcg->add_weighted_path($v2,$readcnt,$v1);
+					$cg->add_edge($rv1,$rv2);
+					$cg->add_edge($v2,$v1);
 				}
 				if($e1==5 && $e2==5){
-						$cg->add_edge($rv1,$rv2);
+					$wcg->add_weighted_path($rv1,$readcnt,$v2);
+					$wcg->add_weighted_path($rv2,$readcnt,$v1);
+					$cg->add_edge($rv1,$v2);
+					$cg->add_edge($rv2,$v1);
 				}
 			}
 			#print "$v1->$node{$v1}\t$v2->$node{$v2}\t$label\n";
@@ -179,13 +199,18 @@ sub getgraph{
 	#print FOPG $g->as_png;
 	use Graph::Traversal::DFS;
     	#$b = Graph::Traversal::BFS->new($cg,%opt);
-	#$b = Graph::Traversal::DFS->new($cg);
+	#$b = Graph::Traversal::DFS->new($ucg);
 	#$b->dfs; # Do the traversal.
-	@topo=$cg->toposort;
-	#@topo=$cg->MST-Prim;
-	#print "$cg\n$b\n";
+	#@topo=$ucg->articulation_points;
+	@topo=$wucg->MST_Prim;
+	#@topo=$wucg->MST_Kruskal;
+	print "$wucg\n$b\n";
 	for($c=0;$c<=$#topo;$c++){	
 		print "@topo[$c]\n";	
 	}
+	#$SSSP = $wcg->SSSP_Dijkstra();
+	#foreach my $u ( $SSSP->vertices ) {
+		#print "$u ", $SSSP->get_attribute("weight", $u)," ", @{ $SSSP->get_attribute("path", $u) }, "\n"
+	#}
 	close F;
 }

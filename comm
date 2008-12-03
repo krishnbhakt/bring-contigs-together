@@ -1,0 +1,1066 @@
+    1  cd ../../ft_cod
+    2  /home/animesh/454/bin/runAssembly FCRLHFZ01.sff
+    3  /home/animesh/454/bin/runAssembly -g FCRLHFZ01.sff
+    4  gedit assemblecontgraph.pl &
+    5  cp ../tilv2/drawcontgraph.pl .
+    6  less drawcontgraph.pl 
+    7  cp ../test/*.pl .
+    8  gimp cont2.png 
+    9  history| rsync
+   10  history| rsync
+   11  cd cqncer_install/
+   12  mv  /home/animesh/Desktop/pcap.454.linux.opteron64 .
+   13  cd
+   14  cd home/
+   15  mv  /home/animesh/Desktop/Programming\ Language\ Design\ Concepts.pdf .
+   16  mv  /home/animesh/Desktop/factor-articles.pdf .
+   17  mv  /home/animesh/Desktop/JavaAI3rd.pdf .
+   18  mv  /home/animesh/Desktop/JavaAI3rd.pdf .
+   19  cd Desktop/
+   20  rtorrent quran-maher.4489161.TPB.torrent 
+   21  mv  /home/animesh/Desktop/JavaAI3rd.pdf .
+   22  cd
+   23  rm -rf .ICEauthority 
+   24  su -
+   25  df -kh
+   26  ls -aslh
+   27  mplayer /home/animesh/Music/Misc/Haji_Ali.mp3 
+   28  history| grep rsync
+   29  rsync --verbose  --progress --stats --recursive --times --perms --links --exclude "*bak"  /export/home/animesh/home/ ash022@129.177.122.138:/Home/siv11/ash022/home/
+   30  mv  /home/animesh/Desktop/JavaAI3rd.pdf .
+   31  cd
+   32  cd home/courses_uib/inf121/
+   33  cd c3
+   34  evince c3.pdf &
+   35  evince INF_121_Compulsory_Exercise_3_H_2008.pdf &
+   36  emacs-22.2-nox c3.pl 
+   37  scp arachne_ciona.tar.gz ash022@fimm.bccs.uib.no:.
+   38  scp arachne_ciona.tar.gz ash022@fimm.bccs.uib.no:/work/ash022/.
+   39  evince c3.pdf &
+   40  evince INF_121_Compulsory_Exercise_3_H_2008.pdf &
+   41  emacs-22.2-nox c3.pl 
+   42  cd ls
+   43  pwd
+   44  rm -rf cqncer/data/frank/ft/refsim
+   45  df -kh
+   46  df -kh
+   47  less _spe/
+   48  evince INF_121_Compulsory_Exercise_3_H_2008.pdf &
+   49  emacs-22.2-nox c3.pl 
+   50  history|grep rsync
+   51  rsync --verbose  --progress --stats --recursive --times --perms --links --exclude "*bak"  /export/home/animesh/home/ ash022@129.177.122.138:/Home/siv11/ash022/home/
+   52  mv  /home/animesh/Desktop/JavaAI3rd.pdf .
+   53  cd home/courses_uib/inf121/
+   54  cd c3
+   55  evince c3.pdf &
+   56  evince INF_121_Compulsory_Exercise_3_H_2008.pdf &
+   57  emacs-22.2-nox c3.pl 
+   58  mplayer /home/animesh/Music/Misc/Haji_Ali.mp3 
+   59  mplayer /home/animesh/animmusic/ani/flv/*
+   60  cd
+   61  git clone git://gitorious.org/magit/mainline.git
+   62  cd mainline/
+   63  sh configure.ac 
+   64  sh autogen.sh 
+   65  ./configure 
+   66  make
+   67  sudo make install
+   68  less INSTALL 
+   69  less README 
+   70  cd home/courses_uib/inf121/
+   71  cd c3
+   72  evince c3.pdf &
+   73  evince INF_121_Compulsory_Exercise_3_H_2008.pdf &
+   74  emacs-22.2-nox c3.pl 
+   75  cd
+   76  cd ar
+   77  cd arachne/
+   78  cd jade/
+   79  less blest/
+   80  cd ..
+   81  du -kh /home/animesh/cqncer/
+   82  rm -rf /home/animesh/cqncer/data/frank/ft/ft_til_p
+   83  rm -rf /home/animesh/cqncer/data/frank/ft/ft_cod_p
+   84  df -kh
+   85  history | grep rsync
+   86  rsync --verbose  --progress --stats --recursive --times --perms --links --exclude "*bak"  /export/home/animesh/arachne ash022@129.177.122.138:/Home/siv11/ash022/arachne
+   87  rsync --verbose  --progress --stats --recursive --times --perms --links --exclude "*bak"  ash022@129.177.122.138:/Home/siv11/ash022/arachne /export/home/animesh/arachne
+   88  scp  ash022@129.177.122.138:/Home/siv11/ash022/arachne/jade/ftp/arachne_ciona.tar.gz arachne/.
+   89  ssh ash022@129.177.122.138
+   90  mv  /home/animesh/Desktop/factor-articles.pdf .
+   91  mv  /home/animesh/Desktop/JavaAI3rd.pdf .
+   92  mv  /home/animesh/Desktop/JavaAI3rd.pdf .
+   93  mv  /home/animesh/Desktop/JavaAI3rd.pdf .
+   94  rm -rf .ICEauthority 
+   95  su -
+   96  df -kh
+   97  ls -aslh
+   98  mplayer /home/animesh/Music/Misc/Haji_Ali.mp3 
+   99  history| grep rsync
+  100  rsync --verbose  --progress --stats --recursive --times --perms --links --exclude "*bak"  /export/home/animesh/home/ ash022@129.177.122.138:/Home/siv11/ash022/home/
+  101  mv  /home/animesh/Desktop/JavaAI3rd.pdf .
+  102  cd home/courses_uib/inf121/
+  103  cd c3
+  104  evince c3.pdf &
+  105  evince INF_121_Compulsory_Exercise_3_H_2008.pdf &
+  106  emacs-22.2-nox c3.pl 
+  107  cd ar
+  108  cd arachne/
+  109  ks
+  110  øs
+  111  cd jade/
+  112  cd tgz/
+  113  less jade.tar 
+  114  cd ..
+  115  history|grep scp
+  116  find . -size 10000M
+  117  find . -size 10000K
+  118  find . -size 10000
+  119  find . -size 1000
+  120  cd
+  121  cd Desktop/
+  122  rtorrent quran-maher.4489161.TPB.torrent 
+  123  evince INF_121_Compulsory_Exercise_3_H_2008.pdf &
+  124  emacs-22.2-nox c3.pl 
+  125  cd home/courses_uib/inf121/
+  126  c c3
+  127  cd c3
+  128  emacs-22.2-nox c3.pl
+  129  mplayer /home/animesh/Music/Misc/What\'s\ Up4\ Non\ Blondes.mp3 
+  130  mplayer /home/animesh/animmusic/johannes/
+  131  mplayer /home/animesh/Music/Ma
+  132  mplayer /home/animesh/animmusic/ani/KOL_OBTN/*
+  133  emacs-22.2-nox c3.pl 
+  134  pwd
+  135  ssh ash022@129.177.122.138
+  136  emacs-22.2-nox c3.pl 
+  137  ssh ash022@fimm.bccs.uib.no
+  138  cd
+  139  cd Desktop/
+  140  scp -r ash022@129.177.122.138:/scratch/animusic/Madrugada/Madrugada*ail* .
+  141  scp -r ash022@129.177.122.138:/scratch/animusic/Madrugada/Madrugad* .
+  142  find . -name ail
+  143  find . -name *ail*
+  144  mplayer Madrugada\ -\ The\ Deep\ End\ \(Limited\ Edition\)/Madrugada\ -\ 12\ -\ Sail\ Away.mp3 
+  145  mplayer Madrugada\ -\ The\ Deep\ End\ \(Limited\ Edition\)/Madrugada\ -\ *
+  146  mplayer /home/animesh/Music/_bhajan/Misc/*
+  147  mplayer --shuffle /home/animesh/Music/_bhajan/Misc/*
+  148  mplayer -shuffle /home/animesh/Music/_bhajan/Misc/*
+  149  history| grep rsync
+  150  rsync --verbose  --progress --stats --recursive --times --perms --links --exclude "*bak"  /export/home/animesh/home/ ash022@129.177.122.138:/Home/siv11/ash022/home/
+  151  mv  /home/animesh/Desktop/JavaAI3rd.pdf .
+  152  cd
+  153  cd home/courses_uib/inf121/
+  154  cd c3
+  155  evince c3.pdf &
+  156  evince INF_121_Compulsory_Exercise_3_H_2008.pdf &
+  157  emacs-22.2-nox c3.pl 
+  158   cd
+  159  cd ar
+  160  cd arachne/
+  161  cd jade/
+  162  ftp ii.uib.no
+  163  ftp ftp.ii.uib.no
+  164  tar xvzf arachne_ciona.tar.gz 
+  165  cd from_wga_data04/
+  166  df -kh
+  167  pwd
+  168  less fileOA_bak 
+  169  vim readme 
+  170  df -kh
+  171  less _spe/
+  172  ssh ash022@129.177.122.138
+  173  cd ..
+  174  cd oppgave/
+  175  emacs-22.2-nox kap11_2.pl 
+  176  evince c3.pdf &
+  177  evince INF_121_Compulsory_Exercise_3_H_2008.pdf &
+  178  emacs-22.2-nox c3.pl 
+  179  cd 
+  180  cd arachne/
+  181  cd jade/
+  182  cd from_wga_data04/
+  183  vi readme
+  184  df -kh
+  185  df -kh
+  186  less _spe/
+  187  cd
+  188  cd Desktop/
+  189  history|grep to
+  190  history|grep pdf
+  191  gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=finished.pdf Document.pdf Document\(2\).pdf 
+  192  2~2~
+  193  rtorrent quran-maher
+  194  rtorrent quran-maher.4489161.TPB.torrent 
+  195  mkdir .git
+  196  history| rsync
+  197  history| rsync
+  198  cd cqncer_install/
+  199  mv  /home/animesh/Desktop/pcap.454.linux.opteron64 .
+  200  cd
+  201  cd home/
+  202  mv  /home/animesh/Desktop/Programming\ Language\ Design\ Concepts.pdf .
+  203  mv  /home/animesh/Desktop/factor-articles.pdf .
+  204  mv  /home/animesh/Desktop/JavaAI3rd.pdf .
+  205  mv  /home/animesh/Desktop/JavaAI3rd.pdf .
+  206  cd Desktop/
+  207  rtorrent quran-maher.4489161.TPB.torrent 
+  208  mv  /home/animesh/Desktop/JavaAI3rd.pdf .
+  209  cd
+  210  rm -rf .ICEauthority 
+  211  su -
+  212  df -kh
+  213  ls -aslh
+  214  mplayer /home/animesh/Music/Misc/Haji_Ali.mp3 
+  215  history| grep rsync
+  216  rsync --verbose  --progress --stats --recursive --times --perms --links --exclude "*bak"  /export/home/animesh/home/ ash022@129.177.122.138:/Home/siv11/ash022/home/
+  217  mv  /home/animesh/Desktop/JavaAI3rd.pdf .
+  218  cd
+  219  cd home/courses_uib/inf121/
+  220  cd c3
+  221  evince c3.pdf &
+  222  evince INF_121_Compulsory_Exercise_3_H_2008.pdf &
+  223  emacs-22.2-nox c3.pl 
+  224  scp arachne_ciona.tar.gz ash022@fimm.bccs.uib.no:.
+  225  scp arachne_ciona.tar.gz ash022@fimm.bccs.uib.no:/work/ash022/.
+  226  evince c3.pdf &
+  227  evince INF_121_Compulsory_Exercise_3_H_2008.pdf &
+  228  emacs-22.2-nox c3.pl 
+  229  cd ls
+  230  rm -rf cqncer/data/frank/ft/refsim
+  231  df -kh
+  232  df -kh
+  233  less _spe/
+  234  pwd
+  235  cd frank/ft
+  236  cd contgraphjoin/
+  237  cd tilv
+  238  cd tilv2
+  239  emacs-22.2-nox getcont_test.pl
+  240  gedit getcont_test.pl
+  241  gedit getcont_test.pl &
+  242  gedit 
+  243  gedit 454ContigGraph.txt 
+  244  display tilcontgraph.png &
+  245  gedit test 
+  246  perl getcont_test.pl 454ContigGraph.txt 454AllContigs.fna 
+  247  perl getcont_test.pl test.graph test.fna 
+  248  perl getcont.pl test.graph test.fna 
+  249  history|grep rsync
+  250  rsync --verbose  --progress --stats --recursive --times --perms --links --delete --exclude "*bak" /export/home/animesh/cqncer/data/frank/ft/contgraphjoin/ ash022@129.177.122.138:/scratch/cqncer/data/frank/contgraphjoin/ 
+  251  rsync --verbose  --progress --stats --recursive --times --perms --links --delete --exclude "*bak" /export/home/animesh/cqncer/data/frank/ft/contgraphjoin/ ash022@129.177.122.138:/scratch/cqncer/data/frank/ft/contgraphjoin/ 
+  252  df -kh
+  253  df -kh
+  254  less _spe/
+  255  cd
+  256  cp .emacs .emacsnew
+  257  cp .emacsold .emacs
+  258  cp .emacsnew .emacsold
+  259  emacs-22.2-nox .emacs
+  260  cp .emacsnew .emacsold
+  261  emacs-22.2-nox .emacs
+  262  history|grep rsync
+  263  rsync --verbose  --progress --stats --recursive --times --perms --links --exclude "*bak"   ash022@129.177.122.138:/Home/siv11/ash022/home/ /export/home/animesh/home/
+  264  rsync --verbose  --progress --stats --recursive --times --perms --links --exclude "*bak"   ash022@129.177.122.138:/Home/siv11/ash022/home/ /export/home/animesh/home/courses_uib/
+  265  rsync --verbose  --progress --stats --recursive --times --perms --links --exclude "*bak"   ash022@129.177.122.138:/Home/siv11/ash022/home/course_uib/inf280/ /export/home/animesh/home/courses_uib/inf280/
+  266  rsync --verbose  --progress --stats --recursive --times --perms --links --exclude "*bak"   ash022@129.177.122.138:/Home/siv11/ash022/home/courses_uib/inf280/ /export/home/animesh/home/courses_uib/inf280/
+  267  ssh ash022@129.177.122.138
+  268  ls -aslh
+  269  mplayer /home/animesh/Music/Misc/Haji_Ali.mp3 
+  270  history| grep rsync
+  271  rsync --verbose  --progress --stats --recursive --times --perms --links --exclude "*bak"  /export/home/animesh/home/ ash022@129.177.122.138:/Home/siv11/ash022/home/
+  272  mv  /home/animesh/Desktop/JavaAI3rd.pdf .
+  273  cd
+  274  cd home/courses_uib/inf121/
+  275  cd c3
+  276  evince c3.pdf &
+  277  evince INF_121_Compulsory_Exercise_3_H_2008.pdf &
+  278  emacs-22.2-nox c3.pl 
+  279  scp arachne_ciona.tar.gz ash022@fimm.bccs.uib.no:.
+  280  scp arachne_ciona.tar.gz ash022@fimm.bccs.uib.no:/work/ash022/.
+  281  evince c3.pdf &
+  282  evince INF_121_Compulsory_Exercise_3_H_2008.pdf &
+  283  emacs-22.2-nox c3.pl 
+  284  cd ls
+  285  rm -rf cqncer/data/frank/ft/refsim
+  286  df -kh
+  287  df -kh
+  288  less _spe/
+  289  pwd
+  290  cd frank/ft
+  291  cd contgraphjoin/
+  292  cd tilv
+  293  cd tilv2
+  294  emacs-22.2-nox getcont_test.pl
+  295  gedit getcont_test.pl
+  296  gedit getcont_test.pl &
+  297  gedit 
+  298  gedit 454ContigGraph.txt 
+  299  display tilcontgraph.png &
+  300  gedit test 
+  301  perl getcont_test.pl 454ContigGraph.txt 454AllContigs.fna 
+  302  perl getcont_test.pl test.graph test.fna 
+  303  perl getcont.pl test.graph test.fna 
+  304  history|grep rsync
+  305  rsync --verbose  --progress --stats --recursive --times --perms --links --delete --exclude "*bak" /export/home/animesh/cqncer/data/frank/ft/contgraphjoin/ ash022@129.177.122.138:/scratch/cqncer/data/frank/contgraphjoin/ 
+  306  rsync --verbose  --progress --stats --recursive --times --perms --links --delete --exclude "*bak" /export/home/animesh/cqncer/data/frank/ft/contgraphjoin/ ash022@129.177.122.138:/scratch/cqncer/data/frank/ft/contgraphjoin/ 
+  307  df -kh
+  308  df -kh
+  309  less _spe/
+  310  cd
+  311  cp .emacs .emacsnew
+  312  cp .emacsold .emacs
+  313  cp .emacsnew .emacsold
+  314  emacs-22.2-nox .emacs
+  315  cd home/courses_uib/inf280/c2
+  316  gedit ann.pl &
+  317  perl ann_t.pl 
+  318  perl ann_t.pl 7 5 100 0.000000000001 0.1 0.9 training.txt validation.txt 
+  319  perl ann_t.pl 7 5 100 0.000000000001 0.1 0.9 hydrophobicity_val training.txt validation.txt 
+  320  gedit ann.pl
+  321  less training
+  322  perl ann.pl
+  323  perl tr.pl 
+  324  pwd
+  325  pwd
+  326  su -
+  327  mplayer -shuffle /home/animesh/Music/_bhajan/Misc/*
+  328  less /proc/meminfo 
+  329  less /proc/cpuinfo 
+  330  cd
+  331  cp .emacs .emacsnew
+  332  cp .emacsold .emacs
+  333  cp .emacsnew .emacsold
+  334  emacs-22.2-nox .emacs
+  335  cd home/courses_uib/inf280/c2
+  336  gedit ann.pl &
+  337  perl ann_t.pl 
+  338  perl ann_t.pl 7 5 100 0.000000000001 0.1 0.9 training.txt validation.txt 
+  339  perl ann_t.pl 7 5 100 0.000000000001 0.1 0.9 hydrophobicity_val training.txt validation.txt 
+  340  gedit ann.pl
+  341  less training
+  342  perl ann.pl
+  343  perl tr.pl 
+  344  pwd
+  345  pwd
+  346  su -
+  347  ks
+  348  cd Desktop/
+  349  rtorrent bk1.torrent 
+  350  s
+  351  cp /tmp/Flash* .
+  352  vlc FlashMvfi5E 
+  353  mplayer FlashWhd3LL 
+  354  mplayer /media/TTC\ VIDEO\ -\ Understanding\ the\ Br/*
+  355  mplayer FlashMvfi5E 
+  356  mplayer /media/TTC\ VIDEO\ -\ Understanding\ the\ Br/relegion/TTC\ -\ Diana\ Eck\ -\ The\ Religions\ of\ India\ 07-10\ Through\ Women\'s\ Eyes\ -\ The\ Dharma\ and\ the\ Devil.mp3 
+  357  mplayer /home/animesh/animmusic/ani/flv/ErlendBratland_StillWater 
+  358  mplayer /home/animesh/animmusic/ani/flv/STS.flv 
+  359  mplayer /media/TTC\ VIDEO\ -\ Understanding\ the\ Br/TTC\ VIDEO\ -\ Understanding\ the\ Brain\ \(compressed\)/_14\ -\ Auditory\ System.avi 
+  360  mplayer /home/animesh/animmusic/ani/flv/KarpeDiem_Fireogtyvegods 
+  361  mplayer -shuffle /home/animesh/Music/_bhajan/Misc/*
+  362  rm -rf Pandit\ Jasraj/
+  363  rm -rf The_best_of_Pandit_Jasraj.torrent 
+  364  rm quran-maher
+  365  rm quran-maher.4489161.TPB.torrent 
+  366  cd  quran-maher/
+  367  less 001.mp3 
+  368  mplayer 001.mp3 
+  369  df -kh
+  370  su -
+  371  top
+  372  cd Desktop/
+  373  rtorrent quran-maher.4489161.TPB.torrent 
+  374  traceroute  196.205.134.240
+  375  cd home/courses_uib/inf280/c2
+  376  gedit ann.pl &
+  377  perl ann_t.pl 
+  378  perl ann_t.pl 7 5 100 0.000000000001 0.1 0.9 training.txt validation.txt 
+  379  perl ann_t.pl 7 5 100 0.000000000001 0.1 0.9 hydrophobicity_val training.txt validation.txt 
+  380  gedit ann.pl
+  381  less training
+  382  perl ann.pl
+  383  perl tr.pl 
+  384  pwd
+  385  pwd
+  386  modprobe
+  387  sudo modprobe
+  388  sudo dmesg
+  389  mkdosfs /dev/sdb
+  390  sudo mkdosfs /dev/sdb
+  391  sudo mkdosfs /dev/sdb -I
+  392   /dev/sdb -I
+  393  su -
+  394  cd Desktop/
+  395  rtorrent quran-maher.4489161.TPB.torrent 
+  396  rtorrent Chanting_Meditation_Krishna_das_-_Pilgrim_Heart.3635058.TPB.torrent 
+  397  rm rm Chanting_Meditation_Krishna_das_-_Pilgrim_Heart.3635058.TPB.torrent 
+  398  mplayer Krishna\ das\ -\ Pilgrim\ heart/*
+  399  rm rm Chanting_Meditation_Krishna_das_-_Pilgrim_Heart.3635058.TPB.torrent 
+  400  mplayer Krishna\ das\ -\ Pilgrim\ heart/*
+  401  cd home/courses_uib/inf121/c3/
+  402  emacs-22.2-nox c3.pl
+  403  cd
+  404  mplayer animmusic/ani/flv/*
+  405  mplayer Music/IndianOcean/Kandisa/*
+  406  rm rm Chanting_Meditation_Krishna_das_-_Pilgrim_Heart.3635058.TPB.torrent 
+  407  mplayer Krishna\ das\ -\ Pilgrim\ heart/*
+  408  diff animesh/austlid.trond/austlid.pl animesh/vines.aleksander/vines.pl 
+  409  ls -1 animesh/
+  410  cd
+  411  cd data/frank/ft/bring-contigs-together/
+  412  git ls-files
+  413  git commit -v
+  414  git diff first twist1
+  415  git diff "first commit" twist1
+  416  git hpdate
+  417  git update
+  418  git --help
+  419  git commit
+  420  gitk -all
+  421  gitk --all
+  422  git commit -a
+  423  history|grep git
+  424   git push origin master
+  425  cd
+  426  cd Desktop/
+  427  emacs-22.2-nox int2short.cc
+  428  modprobe
+  429  sudo modprobe
+  430  sudo dmesg
+  431  mkdosfs /dev/sdb
+  432  sudo mkdosfs /dev/sdb
+  433  sudo mkdosfs /dev/sdb -I
+  434   /dev/sdb -I
+  435  su -
+  436  cd Desktop/
+  437  rtorrent quran-maher.4489161.TPB.torrent 
+  438  rtorrent Chanting_Meditation_Krishna_das_-_Pilgrim_Heart.3635058.TPB.torrent 
+  439  rm rm Chanting_Meditation_Krishna_das_-_Pilgrim_Heart.3635058.TPB.torrent 
+  440  mplayer Krishna\ das\ -\ Pilgrim\ heart/*
+  441  cc int2short.cc 
+  442  c++ int2short.cc
+  443  su -
+  444  ls -aslh
+  445  ls -aslh /home/animesh/
+  446  mv /home/animesh/.* .
+  447  ls -aslh
+  448  ls -aslh /home/animesh/.emacs.d
+  449  less .VirtualBox/
+  450  sudo apt-get install VirtualBox
+  451  qqqqqqqqqqqqqqqqqqqqqqq
+  452  mplayer animmusic/ani/Tease\ me/*
+  453  ls -aslh
+  454  ls -aslh /home/animesh/.emacs.d
+  455  less .VirtualBox/
+  456  sudo apt-get install VirtualBox
+  457  qqqqqqqqqqqqqqqqqqqqqqq
+  458  mplayer animmusic/ani/Tease\ me/*
+  459  DIR
+  460  l
+  461  rm .xinitrcold 
+  462  less .xsession
+  463  øsl
+  464  cp /tmp/Flash4DpIjz /home/ash022/animmusic/ani/flv/Soulwax-NiteVersions-ILoveTechno
+  465  cp /tmp/Flashj6SinL KarpeDiem-Fireogtyvegods
+  466  mv KarpeDiem-Fireogtyvegods animmusic/ani/flv/.
+  467  xmobar
+  468  xmobar .xmonad/xmobar
+  469  øsl
+  470  cp /tmp/Flash4DpIjz /home/ash022/animmusic/ani/flv/Soulwax-NiteVersions-ILoveTechno
+  471  cp /tmp/Flashj6SinL KarpeDiem-Fireogtyvegods
+  472  mv KarpeDiem-Fireogtyvegods animmusic/ani/flv/.
+  473  xmobar
+  474  xmobar .xmonad/xmobar
+  475  ls -asl .xsÆ
+  476  ls -asl .xs*
+  477  rm .xsessionold 
+  478  less .xsessionold 
+  479  rm .xsession
+  480  vim .xsession~
+  481  ls -aslh .xsession-errors
+  482  less .xsession-errors.old 
+  483  ls -ash .xsession-errors
+  484  less .xsession-errors
+  485  less .Xauthority 
+  486  vim .Xresources
+  487  less .xsession
+  488  .xsession
+  489  chmod 755 .xsession
+  490  ./.xsession 
+  491  chmod 755 .xsession
+  492  ./.xsession 
+  493  mv .xsession .xmonad/.
+  494  gedit .xsession
+  495  gedit .xsession &
+  496  gedit .xmonad/.xsession 
+  497  gedit .xmonad/xmobar
+  498  gedit .xmonad/xmonad.hs
+  499  /usr/local/bin/xmobar /home/ash022/.xmonad/xmobar
+  500  ls -aslh -x*
+  501  ls -aslh .x*
+  502  .xmonad/xmonad-i386-linux 
+  503  cd Examples
+  504  cd ..
+  505  VirtualBox 
+  506  VirtualBox 
+  507  .xsession
+  508  sh .xsession
+  509  ls -aslh .x*
+  510  .xmonad/xmonad-i386-linux 
+  511  cd Examples
+  512  cd ..
+  513  VirtualBox 
+  514  less .xsession-errors
+  515  du -kh
+  516  ls /home/animesh/
+  517  rm -rf /home/animesh/mat/
+  518  sudo rm -rf /home/animesh/mat/
+  519  mv  /home/animesh/Desktop/* Desktop/.
+  520  df -kh
+  521  less .xsession
+  522  mkdir xmo
+  523  cp .xsession xmo/.
+  524  cp .Xresources xmo/.
+  525  cp .xmonad/xmobar xmo/.
+  526  cp .xmonad/xmonad.hs xmo/.
+  527  tar cvzf xmo.tgz xmo
+  528  rm xmo.tgz 
+  529  ls -aslh
+  530  ls .ICEauthority 
+  531  less .ICEauthority 
+  532  ls -aslh .ICEauthority 
+  533  sudo apt-get install --fix-missing xdm
+  534  sudo apt-get install xdm
+  535  firefox &
+  536  vi .xsession
+  537  sysctl 
+  538  sudo sysconfig
+  539  xscreensaver
+  540  xscreensaver-demo 
+  541  /usr/local/bin/xmobar /home/ash022/.xmonad/xmobar
+  542  ls -aslh -x*
+  543  ls -aslh .x*
+  544  .xmonad/xmonad-i386-linux 
+  545  cd Examples
+  546  VirtualBox 
+  547  VirtualBox 
+  548  .xsession
+  549  sh .xsession
+  550  ls -aslh .x*
+  551  .xmonad/xmonad-i386-linux 
+  552  cd Examples
+  553  VirtualBox 
+  554  less .xsession-errors
+  555  du -kh
+  556  ls /home/animesh/
+  557  rm -rf /home/animesh/mat/
+  558  sudo rm -rf /home/animesh/mat/
+  559  mv  /home/animesh/Desktop/* Desktop/.
+  560  df -kh
+  561  less .xsession
+  562  mkdir xmo
+  563  cp .xsession xmo/.
+  564  cp .Xresources xmo/.
+  565  cp .xmonad/xmobar xmo/.
+  566  cp .xmonad/xmonad.hs xmo/.
+  567  tar cvzf xmo.tgz xmo
+  568  rm xmo.tgz 
+  569  ls -aslh
+  570  ls .ICEauthority 
+  571  less .ICEauthority 
+  572  ls -aslh .ICEauthority 
+  573  sudo apt-get install --fix-missing xdm
+  574  sudo apt-get install xdm
+  575  firefox &
+  576  vi .xsession
+  577  sysctl 
+  578  sudo sysconfig
+  579  xscreensaver
+  580  xscreensaver-demo 
+  581  xscreensaver-command -lock
+  582  ls //home/ash022/cqncer_install/phred/phred
+  583  echo $PATH
+  584  ls bin/
+  585  cd bin/
+  586  echo "xscreensaver-command -lock" > xlock
+  587  chmod 755 xlock 
+  588  whereis bash
+  589  vi xlock 
+  590  ./xlock 
+  591  xlock 
+  592  sudo apt-get install weka
+  593  shopt -s histappend
+  594  java --ver
+  595  java --version
+  596  java -version
+  597  ls /usr/share/java
+  598  find /usr -name jre
+  599  ls /usr/lib/jvm/java-6-sun-1.6.0.10/jre
+  600  explort $CLASSPATH=/usr/lib/jvm/java-6-sun-1.6.0.10/jre/lib/
+  601  export $CLASSPATH=/usr/lib/jvm/java-6-sun-1.6.0.10/jre/lib/
+  602  export CLASSPATH=/usr/lib/jvm/java-6-sun-1.6.0.10/jre/lib/
+  603  export CLASSPATH=/usr/lib/jvm/java-6-sun-1.6.0.10/jre/lib/
+  604  weka 
+  605  java -jar /usr/share/java/weka.jar 
+  606  java -jar /usr/share/java/weka
+  607  java -jar /usr/share/java/weka-3.5.7+tut1.jar 
+  608  sudo apt-get install gstreamer
+  609  sudo apt-get install ffmpeg
+  610  sudo apt-get install R
+  611  sudo apt-get install r
+  612  sudo apt-get install r-package
+  613  sudo apt-get install bioperl
+  614  ls /usr/local/share/emacs/site-lisp/
+  615  mv /usr/share/emacs/site-lisp/prolog.el /usr/local/share/emacs/site-lisp/.
+  616  sudo mv /usr/share/emacs/site-lisp/prolog.el /usr/local/share/emacs/site-lisp/.
+  617   /usr/local/share/emacs/site-lisp/.
+  618  sudo vi /usr/local/share/emacs/site-lisp/prolog.el 
+  619  sudo cp /usr/bin/prolog /usr/bin/pl
+  620  pl
+  621  sudo rm /usr/bin/pl
+  622  sudo ln -s /usr/bin/prolog /usr/bin/pl
+  623  q
+  624  ls 
+  625  Weka
+  626  whereis weka
+  627  less /usr/bin/weka
+  628  /usr/bin/weka
+  629  export CLASSPATH=/home/ash022/weka/
+  630  cd  /scratch/animesh/projects/research/soumya_nonlinear/pca/
+  631  perl test_run.pl
+  632  less test_run.pl
+  633  lsles
+  634  less xora.txt
+  635  cd
+  636  cd weka/
+  637  cd ..
+  638  cd home/misc/
+  639  cp  /scratch/animesh/projects/research/soumya_nonlinear/pca/test_run.pl .
+  640  cp  /scratch/animesh/projects/research/soumya_nonlinear/pca/xora.txt .
+  641  ls /home/ash022/weka/
+  642  sudo chown ash022:ash022 /home/ash022/weka
+  643  sudo chown -R ash022:ash022 /home/ash022/weka
+  644  echo $CLASSPATH
+  645  less .bashrc
+  646  less /home/ash022/.bashrc
+  647  vi /home/ash022/.bashrc
+  648  cat /home/ash022/.bashrc
+  649  export CLASSPATH=$HOME/weka
+  650  perl test_run.pl xora.txt 
+  651  ls -aslh /home/ash022/weka/
+  652  ls -aslh /home/ash022/weka/core/converters/CSVLoader.class 
+  653  less test_run.pl 
+  654  weka
+  655  java weka.core.converters.CSVLoader 
+  656  java -classpath /home/ash022/weka/ weka.core.converters.CSVLoader 
+  657  java -classpath /home/ash022/weka weka.core.converters.CSVLoader 
+  658  jaa
+  659  java -cp /home/ash022/weka weka.core.converters.CSVLoader 
+  660  java
+  661  java -splash
+  662  java -cp /home/ash022/weka -cp /usr/share/java/ weka.core.converters.CSVLoader 
+  663  java -cp /home/ash022/weka -c weka.core.converters.CSVLoader 
+  664  whereis java
+  665  ls -aslh /usr/bin/java
+  666  ls -aslh /etc/alternatives/java
+  667  ls -aslh usr/lib/jvm/java-6-sun/jre/bin/java
+  668  ls -aslh /usr/lib/jvm/java-6-sun/jre/bin/java
+  669  /usr/lib/jvm/java-6-sun/jre/bin/java
+  670  java -cp /home/ash022/weka -cp /usr/lib/jvm/java-6-sun/jre/ weka.core.converters.CSVLoader 
+  671  java -cp /home/ash022/weka -cp /usr/lib/jvm/java-6-sun/jre/plugin/ weka.core.converters.CSVLoader 
+  672  java -cp /home/ash022/weka -cp /usr/lib/jvm/java-6-sun/jre/lib/ weka.core.converters.CSVLoader 
+  673  java -cp /home/ash022/weka -cp /usr/lib/jvm/java-6-sun/jre/lib weka.core.converters.CSVLoader 
+  674  java  -cp /usr/lib/jvm/java-6-sun/jre/lib weka.core.converters.CSVLoader 
+  675  sudo sysconfig
+  676  xscreensaver
+  677  xscreensaver-demo 
+  678  cd
+  679  gedit .bashrc &
+  680  emacs home/courses_uib/inf121/c3/c3.pl
+  681  emacs .emacs
+  682  sudo apt-get install xdm
+  683  firefox &
+  684  vi .xsession
+  685  sysctl 
+  686  sudo sysconfig
+  687  xscreensaver
+  688  xscreensaver-demo 
+  689  ls /usr/share/java/
+  690  sudo java xvzf /usr/share/java/weka.jar
+  691  sudo java -jar xvzf /usr/share/java/weka.jar
+  692  sudo  tar xvzf /usr/share/java/weka.jar
+  693  sudo  tar xvzf /usr/share/java/weka.jar 
+  694  sudo apt-get install jdk6
+  695  sudo apt-get install jdk1.6
+  696  sudo apt-get install jdk
+  697  sudo apt-get install jdk16
+  698  sudo apt-get install jdk-1.6
+  699  sudo apt-get install java6
+  700  sudo apt-get install java16
+  701  sudo apt-get install java1.6
+  702  sudo apt-get install java-1.6
+  703  sudo apt-get install sun-java-1.6
+  704  sudo apt-get install sun-java
+  705  sudo apt-get install java
+  706  sudo apt-get install sun-java5-plugin
+  707  sudo apt-get install sun-java6-plugin
+  708  sudo apt-get install sun-java6
+  709   sudo apt-get install sun-java6-bin sun-java6-jre sun-java6-jdk
+  710  sudo update-java-alternatives -s java-6-sun
+  711  sudo vi /etc/jvm
+  712  sudo jar xvzf /usr/share/java/weka.jar
+  713  sudo jar xvf /usr/share/java/weka.jar
+  714  less weka/
+  715  ls weka/
+  716  history|grep CLASS
+  717  history|grep CLASS*
+  718   java -version
+  719   sudo apt-get install realplayer
+  720   sudo apt-get install real
+  721   sudo apt-get install real*
+  722   sudo apt-get install gstreamer-tools
+  723   sudo apt-get install ffmpeg
+  724   sudo apt-get install mplayer-codecs
+  725   sudo apt-get install mplayer-codec
+  726   sudo apt-get install r-cran
+  727   sudo apt-get install r-base-core
+  728  R
+  729  cd
+  730  ls -aslh weka/
+  731  ls -aslh 
+  732  weka
+  733  vi .bashrc
+  734  echo $CLASSPATH
+  735  xscreensaver-demo 
+  736  echo $CLASSPATH
+  737  perl test_run.pl 
+  738  perl test_run.pl xora.txt
+  739  java -jar /usr/share/java/weka.jar 
+  740  xscreensaver-demo 
+  741  perl test_run.pl 
+  742  ls /home/ash022/weka
+  743  java -v
+  744  java -version
+  745  jdk
+  746  javac
+  747  echo $CLASSPATH
+  748  export classpath=$CLASSPATH
+  749  perl test_run.pl xora.txt
+  750  xscreensaver
+  751  xscreensaver-demo 
+  752  top
+  753  free -m
+  754  gimp
+  755  weka
+  756  cd Desktop/
+  757  tar xvzf essential-20071007.tar.bz2 
+  758  tar xvjf essential-20071007.tar.bz2 
+  759  mv essential-20071007 /usr/local/lib/codecs
+  760  sudo mv essential-20071007 /usr/local/lib/codecs
+  761  sudo apt-get install w32codecs libdvdcss2
+  762  sudo apt-get install mozilla-mplayer
+  763  sudo apt-get uninstall totem-mozilla
+  764  sudo apt-get remove totem-mozilla
+  765  ps -ae | grep fire
+  766  kill -9 17290
+  767  tar xvzf essential-20071007.tar.bz2 
+  768  tar xvjf essential-20071007.tar.bz2 
+  769  mv essential-20071007 /usr/local/lib/codecs
+  770  sudo mv essential-20071007 /usr/local/lib/codecs
+  771  sudo apt-get install w32codecs libdvdcss2
+  772  sudo apt-get install mozilla-mplayer
+  773  sudo apt-get uninstall totem-mozilla
+  774  sudo apt-get remove totem-mozilla
+  775  ps -ae | grep fire
+  776  kill -9 17290
+  777  weka
+  778  java -jar /usr/share/java/weka.jar 
+  779  cd Desktop/
+  780  javac ResultatOversikt3.java 
+  781  java ResultatOversikt3.
+  782  export CLASSPATH=/home/ash022/Desktop
+  783  java ResultatOversikt3
+  784  cd ..
+  785  cd weka/
+  786  export CLASSPATH=/home/ash022/weka/
+  787  cp ../home/misc/test_run.pl .
+  788  cp ../home/misc/xora.txt
+  789  cp ../home/misc/xora.txt -
+  790  cp ../home/misc/xora.txt .
+  791  l
+  792  export CLASSPATH=/home/ash022/weka
+  793  ls weka/classifiers/meta/ClassificationViaRegression
+  794  export CLASSPATH=/home/ash022
+  795  perl test_run.pl xora.txt 
+  796  cd
+  797  vim .bashrc
+  798  javac ResultatOversikt3.java 
+  799  java ResultatOversikt3.
+  800  export CLASSPATH=/home/ash022/Desktop
+  801  java ResultatOversikt3
+  802  cd weka/
+  803  export CLASSPATH=/home/ash022/weka/
+  804  cp ../home/misc/test_run.pl .
+  805  cp ../home/misc/xora.txt
+  806  cp ../home/misc/xora.txt -
+  807  cp ../home/misc/xora.txt .
+  808  l
+  809  export CLASSPATH=/home/ash022/weka
+  810  ls weka/classifiers/meta/ClassificationViaRegression
+  811  export CLASSPATH=/home/ash022
+  812  perl test_run.pl xora.txt 
+  813  cd
+  814  vim .bashrc
+  815  ls net*
+  816  ls .net*
+  817  ls /home/animesh/.net*
+  818  ls /home/animesh/net*
+  819  cd animmusic/
+  820  cd ani/
+  821  rm -rf madru/
+  822  cd flv/
+  823  cd ..
+  824  cd /scratch/
+  825  rm -rf linuxlocal/
+  826  sudo rm -rf linuxlocal/
+  827  rm -rf share/
+  828  sudo rm -rf share/
+  829  sudo rm -rf lost+found/
+  830  du -kh
+  831  mkdir newa
+  832  cd newa/
+  833  mv /home/ash022/animmusic .
+  834  mv /home/ash022/home/books .
+  835  df -kh
+  836  perl test_run.pl xora.txt 
+  837  vim .bashrc
+  838  cd
+  839  ls 
+  840  cd home/cbu/
+  841  ooffice genome.odp 
+  842  cd
+  843  cat .bashrc
+  844  ls /usr/lib/jvm/java-6-sun/jre/lib
+  845  ls /usr/lib/jvm/java-6-sun/jre/bin/
+  846  /usr/lib/jvm/java-6-sun/jre/bin/java
+  847  /usr/lib/jvm/java-6-sun/jre/bin/java -V
+  848  /usr/lib/jvm/java-6-sun/jre/bin/java -v
+  849  /usr/lib/jvm/java-6-sun/jre/bin/java --v
+  850  /usr/lib/jvm/java-6-sun/jre/bin/java -version
+  851  mv essential-20071007 /usr/local/lib/codecs
+  852  sudo mv essential-20071007 /usr/local/lib/codecs
+  853  sudo apt-get install w32codecs libdvdcss2
+  854  sudo apt-get install mozilla-mplayer
+  855  sudo apt-get uninstall totem-mozilla
+  856  sudo apt-get remove totem-mozilla
+  857  ps -ae | grep fire
+  858  kill -9 17290
+  859  weka
+  860  java -jar /usr/share/java/weka.jar 
+  861  javac ResultatOversikt3.java 
+  862  java ResultatOversikt3.
+  863  export CLASSPATH=/home/ash022/Desktop
+  864  java ResultatOversikt3
+  865  export CLASSPATH=/home/ash022/weka/
+  866  cp ../home/misc/test_run.pl .
+  867  cp ../home/misc/xora.txt
+  868  cp ../home/misc/xora.txt -
+  869  cp ../home/misc/xora.txt .
+  870  export CLASSPATH=/home/ash022/weka
+  871  ls weka/classifiers/meta/ClassificationViaRegression
+  872  export CLASSPATH=/home/ash022
+  873  perl test_run.pl xora.txt 
+  874  vim .bashrc
+  875  unzip weka-3-5-8.zip 
+  876  cd weka-3-5-8
+  877  mv weka-3-5-8 ../weka
+  878  cd
+  879  cd weka/
+  880  java -jar weka-src.jar 
+  881  jar xvf weka-src.jar 
+  882  l
+  883  cd weka-3-5-8/
+  884  java -jar weka.jar 
+  885  java -jar weka.jar --nosplash
+  886  cd 
+  887  cd Desktop/
+  888  sudo apt-get install rtorrent
+  889  rtorrent Sanskrit__Essence_Of_The_Vedas_\(128_kbps\).4325033.TPB.torrent 
+  890  rm -rf Sanskrit__Essence_Of_The_Vedas_\(128_kbps\).4325033.TPB*
+  891  rm sml-mode-4.0*
+  892  rm -rf sml-mode-4.0*
+  893  rm -rf gmail-notify-1.6.1.1*
+  894  rm -rf netbeans-6.5*
+  895  rm weka-3-5-8.zip 
+  896  mv b* /scratch/newa/books/.
+  897  mv Mastering\ Algorithms\ with\ Perl.pdf /scratch/newa/books/.
+  898  rm -rf X11-xft-0.3*
+  899  mv quran-maher /scratch/newa/animmusic/.
+  900  mv Krishna\ das\ -\ Pilgrim\ heart/ /scratch/newa/animmusic/Pilgrim_KD
+  901  rm ResultatOversikt3.*
+  902  rm HareKrishna.mp3 
+  903  rm -rf Essence\ Of\ The\ Vedas/
+  904  evince ttfp.pdf 
+  905  gcc int2short.cc
+  906  cc int2short.cc
+  907  rm *.pdf
+  908  rm processing-1.0.tgz*
+  909  rm *.ppt
+  910  lss
+  911  rm essential-20071007.tar.bz2 
+  912  rm home_misc 
+  913  rm vpart/
+  914  rm -rf vpart/
+  915  mv MAA /home/ash022/home/misc/.
+  916  mv int2short.cc /home/ash022/home/misc/.
+  917  rm int2short.cc~ 
+  918  cd ..
+  919  sudo apt-get install irssi
+  920  irssi -c chat.freenode.net -n myname -w mypassword
+  921  sudo apt-get uninstall totem-mozilla
+  922  sudo apt-get remove totem-mozilla
+  923  ps -ae | grep fire
+  924  kill -9 17290
+  925  cd home/
+  926  cd misc/
+  927  cp /scratch/animesh/projects/research/soumya_nonlinear/pca/*.arff 
+  928  cp /scratch/animesh/projects/research/soumya_nonlinear/pca/*.arff .
+  929  perl test_run.pl xora.txt
+  930  less xora.txt.arff 
+  931  ls *.arff
+  932  less class_all_pl.arff
+  933  cp /scratch/animesh/projects/research/soumya_nonlinear/mlp/data4.arff .
+  934  less data4.arff 
+  935  cat test_run.pl 
+  936  java weka.classifiers.functions.LinearRegression -t data4.arff -x 5
+  937  java weka.classifiers.functions.mlp -t data4.arff -x 5
+  938  ls /home/ash022/weka/classifiers/functions/
+  939  java weka.classifiers.functions.MultilayerPerceptron -t data4.arff -x 5
+  940  weka
+  941  java -jar /usr/share/java/weka-3.5.7+tut1.jar 
+  942  sudo apt-get ircssi
+  943  sudo apt-get ircii
+  944  sudo apt-get install ircssi
+  945  sudo apt-get install ircii
+  946  ircii
+  947  ircII
+  948  rm -rf ypsilon-0.9.5/
+  949  gcc int2short.cc 
+  950  emacs int2short.cc 
+  951  sh netbeans-6.5-ml-linux.sh 
+  952  rm -rf emacs-22.3*
+  953  irssi -c chat.freenode.net -n myname -w mypassword
+  954  export CLASSPATH=/home/ash022/weka
+  955  ls weka/classifiers/meta/ClassificationViaRegression
+  956  export CLASSPATH=/home/ash022
+  957  perl test_run.pl xora.txt 
+  958  cd
+  959  vim .bashrc
+  960  cc int2short.cc
+  961  ls weka/classifiers/meta/ClassificationViaRegression
+  962  export CLASSPATH=/home/ash022
+  963  perl test_run.pl xora.txt 
+  964  cd
+  965  cc int2short.cc
+  966  export AWT_TOOLKIT=MToolkit
+  967  weka
+  968  vim .bashrc
+  969  sudo apt-get install ooffice3
+  970  [edit]
+  971  sudo    apt-get install libx11-dev
+  972  sudo    apt-get -f install
+  973  ls -aslh /usr/bin/skype 
+  974  sudo    apt-get upgrade
+  975  synaptic 
+  976  sudo synaptic
+  977  s
+  978  sudo apt-get install ircssi
+  979  sudo apt-get install ircii
+  980  ircii
+  981  ircII
+  982  rm -rf ypsilon-0.9.5/
+  983  gcc int2short.cc 
+  984  emacs int2short.cc 
+  985  sh netbeans-6.5-ml-linux.sh 
+  986  rm -rf emacs-22.3*
+  987  irssi -c chat.freenode.net -n myname -w mypassword
+  988  export CLASSPATH=/home/ash022/weka
+  989  ls weka/classifiers/meta/ClassificationViaRegression
+  990  export CLASSPATH=/home/ash022
+  991  perl test_run.pl xora.txt 
+  992  cd
+  993  vim .bashrc
+  994  cc int2short.cc
+  995  find / -name xorg.conf
+  996  sudo vim /etc/X11/xorg.conf
+  997  sudo dpkg-reconfigure -phigh xserver-xorg
+  998  12/78
+  999  weka
+ 1000  sudo apt-get install weka
+ 1001  sudo apt-get install ooffice
+ 1002  sudo apt-get install openoffice
+ 1003  sudo apt-get install open-office
+ 1004  ooffice 
+ 1005  sudo apt-get update openoffice.org
+ 1006  sudo apt-get install openoffice.org
+ 1007  sudo vim /etc/apt/sources.list
+ 1008  sudo apt-get clean
+ 1009  sudo apt-get 
+ 1010  sudo apt-get update
+ 1011  sudo apt-get upgrade
+ 1012  sudo apt-get upgrade openoffice.org
+ 1013  sudo apt-get upgrade openoffice
+ 1014  sudo apt-get upgrade openoffice*
+ 1015  sudo apt-get install skype
+ 1016  cd Desktop/
+ 1017  dpkg skype-debian_2.0.0.72-1_i386.deb
+ 1018  dpkg -i skype-debian_2.0.0.72-1_i386.deb
+ 1019  sudo dpkg  skype-debian_2.0.0.72-1_i386.deb
+ 1020  sudo dpkg-deb  skype-debian_2.0.0.72-1_i386.deb
+ 1021  sudo dpkg-deb  --help skype-debian_2.0.0.72-1_i386.deb
+ 1022  sudo dpkg skype-debian_2.0.0.72-1_i386.deb
+ 1023  dpkg --help
+ 1024  sudo dpkg -i skype-debian_2.0.0.72-1_i386.deb
+ 1025  tar xvjf skype_static-2.0.0.72-oss.tar.bz2 
+ 1026  cd skype_static-2.0.0.72-oss
+ 1027  ./skype 
+ 1028  cd ..
+ 1029  sudo mv skype_static-2.0.0.72-oss /usr/local/share/skype
+ 1030  sudo ln -s /usr/local/share/skype/skype /usr/bin/skype
+ 1031  skype 
+ 1032  rm -rf skype*
+ 1033  rm User\ account\ application-okt08.pdf 
+ 1034  cd
+ 1035  vim .bashrc
+ 1036  cc int2short.cc
+ 1037  cd Desktop/
+ 1038  tar xvzf Cabal-1.6.0.1.tar.gz 
+ 1039  cd Cabal-1.6.0.1
+ 1040  runhaskell Setup.hs configure
+ 1041  runhaskell Setup.hs build
+ 1042  runhaskell Setup.hs install
+ 1043  sudo runhaskell Setup.hs install
+ 1044  cd ..
+ 1045  rm -rf Cabal-1.6.0.1*
+ 1046  irssi -c chat.freenode.net -n myname -w mypassword
+ 1047  cd cqncer
+ 1048  cd data/
+ 1049  cd frank/
+ 1050  cd ft
+ 1051  cd bring-contigs-together/
+ 1052  ls
+ 1053  gedit getcont.pl
+ 1054  gedit getcont.pl&
+ 1055  less 454AllContigs.fna 
+ 1056  rm 454*
+ 1057  ln -s /home/ash022/cqncer/data/frank/ft/contgraphjoin/tilv2/* .
+ 1058  perl getcont.pl 454ContigGraph.txt 454AllContigs.fna 
+ 1059  git
+ 1060  git diff
+ 1061  git status
+ 1062  git add
+ 1063  git add .
+ 1064  git commit -m "Changes machine"
+ 1065  git push
+ 1066  history > comm
