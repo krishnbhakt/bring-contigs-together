@@ -44,25 +44,6 @@ sub printconcatstring {
 		        $node{$v1}++;
 			$node{$v2}++;
 			$label="$e1->$e2($readcnt)";
-			if($e1==5 && $e2==3){
-				print ">RR.$cnam{$v1}.$e1.$cnam{$v2}.$e2\t$v1->$node{$v1}->$clen{$v1}->$cdep{$v1}\t$v2->$node{$v2}->$clen{$v2}->$cdep{$v2}\t$label\n";
-				$fas1=substr(@seq[@t1[1]-1],0,$length1);
-				$rfas1=reverse($fas1);
-				$rfas1 =~ tr/ACGTacgt/TGCAtgca/;
-				$rrfas1=reverse($rfas1);
-				$fas2=substr(@seq[@t1[3]-1],-($length2),$length2);
-				$rfas2=reverse($fas2);
-				$rfas2 =~ tr/ACGTacgt/TGCAtgca/;
-				$fastest1=substr(@seq[@t1[1]-1],0,$length1).substr(@seq[@t1[1]-1],-($length1),$length1);
-				$fastest2=substr(@seq[@t1[3]-1],0,$length2).substr(@seq[@t1[3]-1],-($length2),$length2);
-				$rfastest1=reverse($fastest1);
-				$rfastest2=reverse($fastest2);
-				$rfastest1 =~ tr/ACGTacgt/TGCAtgca/;
-				$rfastest2 =~ tr/ACGTacgt/TGCAtgca/;
-				$rrfastest1=reverse($rfastest1);
-				$rrfastest2=reverse($rfastest2);
-				print $rrfas1.$rfas2."\n";
-			}
 			$e1=10;$e2=10;#get other loops out
 			if($e1==3 && $e2==5){
 				print ">FF.$cnam{$v1}.$e1.$cnam{$v2}.$e2\t$v1->$node{$v1}->$clen{$v1}->$cdep{$v1}\t$v2->$node{$v2}->$clen{$v2}->$cdep{$v2}\t$label\n";
@@ -78,7 +59,6 @@ sub printconcatstring {
 				$rrfastest2=reverse($rfastest2);
 				print $fas1.$fas2."\n";
 			}
-		
 			if($e1==3 && $e2==3){
 				print ">FR.$cnam{$v1}.$e1.$cnam{$v2}.$e2\t$v1->$node{$v1}->$clen{$v1}->$cdep{$v1}\t$v2->$node{$v2}->$clen{$v2}->$cdep{$v2}\t$label\n";
 				$fas1=substr(@seq[@t1[1]-1],-($length1),$length1);
@@ -97,6 +77,25 @@ sub printconcatstring {
 				$rrfastest2=reverse($rfastest2);
 				print $fas1.$rfas2."\n";
 			}
+			if($e1==5 && $e2==3){
+				print ">RR.$cnam{$v1}.$e1.$cnam{$v2}.$e2\t$v1->$node{$v1}->$clen{$v1}->$cdep{$v1}\t$v2->$node{$v2}->$clen{$v2}->$cdep{$v2}\t$label\n";
+				$fas1=substr(@seq[@t1[1]-1],0,$length1);
+				$rfas1=reverse($fas1);
+				$rfas1 =~ tr/ACGTacgt/TGCAtgca/;
+				$rrfas1=reverse($rfas1);
+				$fas2=substr(@seq[@t1[3]-1],-($length2),$length2);
+				$rfas2=reverse($fas2);
+				$rfas2 =~ tr/ACGTacgt/TGCAtgca/;
+				$fastest1=substr(@seq[@t1[1]-1],0,$length1).substr(@seq[@t1[1]-1],-($length1),$length1);
+				$fastest2=substr(@seq[@t1[3]-1],0,$length2).substr(@seq[@t1[3]-1],-($length2),$length2);
+				$rfastest1=reverse($fastest1);
+				$rfastest2=reverse($fastest2);
+				$rfastest1 =~ tr/ACGTacgt/TGCAtgca/;
+				$rfastest2 =~ tr/ACGTacgt/TGCAtgca/;
+				$rrfastest1=reverse($rfastest1);
+				$rrfastest2=reverse($rfastest2);
+				print $rrfas1.$rfas2."\n";
+			}			
 			if($e1==5 && $e2==5){
 				print ">RF.$cnam{$v1}.$e1.$cnam{$v2}.$e2\t$v1->$node{$v1}->$clen{$v1}->$cdep{$v1}\t$v2->$node{$v2}->$clen{$v2}->$cdep{$v2}\t$label\n";
 				$fas1=substr(@seq[@t1[1]-1],0,$length1);
@@ -192,25 +191,34 @@ sub getgraph{
 					$cg->add_edge($rv2,$v1);
 				}
 			}
-			#print "$v1->$node{$v1}\t$v2->$node{$v2}\t$label\n";
+			print "$v1->$node{$v1}\t$v2->$node{$v2}\t$label\n";
 		}
 	}
 	#open(FOPG,">$file1.gv");
 	#print FOPG $g->as_png;
-	use Graph::Traversal::DFS;
+	#use Graph::Traversal::DFS;
     	#$b = Graph::Traversal::BFS->new($cg,%opt);
 	#$b = Graph::Traversal::DFS->new($ucg);
 	#$b->dfs; # Do the traversal.
-	#@topo=$ucg->articulation_points;
-	@topo=$wucg->MST_Prim;
+	#@topo=$wucg->articulation_points;
+	#@topo=$wucg->MST_Prim;
 	#@topo=$wucg->MST_Kruskal;
-	print "$wucg\n$b\n";
-	for($c=0;$c<=$#topo;$c++){	
-		print "@topo[$c]\n";	
+	#print "$wucg\n$b\n";
+	#for($c=0;$c<=$#topo;$c++){	
+	#	print "@topo[$c]\n";	
+	#}		
+	$SSSP = $wcg->SPT_Bellman_Ford;
+	#$SSSP = $wcg->SPT_Dijkstra;
+	print "$v1\t$v2\t$rv1\t$rv2\n$sptg\n";
+	#$SSSP = $wucg->SSSP_Dijkstra($v2);
+	#$SSSP = $wucg->SSSP_Dijkstra("C.1");
+	foreach my $u ( $SSSP->vertices ) {
+		print "$u - ",$SSSP->get_vertex_attribute($u, 'weight')," - ", $SSSP->get_vertex_attribute($u, 'p'), "\n"
 	}
-	#$SSSP = $wcg->SSSP_Dijkstra();
-	#foreach my $u ( $SSSP->vertices ) {
-		#print "$u ", $SSSP->get_attribute("weight", $u)," ", @{ $SSSP->get_attribute("path", $u) }, "\n"
-	#}
+	$dwcg = $wcg->diameter;
+	print "$dwcg\n";
+	@lpwcg = $wcg->longest_path;
+	print join ",", @lpwcg, "\n";
+
 	close F;
 }
