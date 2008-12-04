@@ -128,7 +128,8 @@ sub printconcatstring {
 
 sub getgraph{
 	use GraphViz;
-	$g = GraphViz->new();use Graph::Traversal::BFS;
+	$g = GraphViz->new();
+	use Graph::Traversal;
 	use Graph::Directed;
 	use Graph::Undirected;
 	$cg = Graph::Directed->new;   # A directed graph.
@@ -171,27 +172,43 @@ sub getgraph{
 					$wcg->add_weighted_path($rv2,$readcnt,$rv1);
 					$cg->add_edge($v1,$v2);
 					$cg->add_edge($rv2,$rv1);
+					$edge_wcg{$v1.$v2}=$readcnt;
+					$edge_wcg{$rv2.$rv1}=$readcnt;
 				}
 				if($e1==3 && $e2==3){
 					$wcg->add_weighted_path($v1,$readcnt,$rv2);
 					$wcg->add_weighted_path($v2,$readcnt,$rv1);
 					$cg->add_edge($v1,$rv2);
 					$cg->add_edge($v2,$rv1);
+					$edge_wcg{$v1.$rv2}=$readcnt;
+					$edge_wcg{$v2.$rv1}=$readcnt;
 				}
 				if($e1==5 && $e2==3){
 					$wcg->add_weighted_path($rv1,$readcnt,$rv2);
 					$wcg->add_weighted_path($v2,$readcnt,$v1);
 					$cg->add_edge($rv1,$rv2);
 					$cg->add_edge($v2,$v1);
+					$edge_wcg{$rv1.$rv2}=$readcnt;
+					$edge_wcg{$v2.$v1}=$readcnt;
 				}
 				if($e1==5 && $e2==5){
 					$wcg->add_weighted_path($rv1,$readcnt,$v2);
 					$wcg->add_weighted_path($rv2,$readcnt,$v1);
 					$cg->add_edge($rv1,$v2);
 					$cg->add_edge($rv2,$v1);
+					$edge_wcg{$rv1.$v2}=$readcnt;
+					$edge_wcg{$rv2.$v1}=$readcnt;
 				}
 			}
-			print "$v1->$node{$v1}\t$v2->$node{$v2}\t$label\n";
+				#print "$v1->$node{$v1}\t$v2->$node{$v2}\t$label\t\t$rv1-$v2\t$edge_wcg{$rv1-$v2}\n";		
+	
+		}
+		elsif (@t1[0] =~ /[0-9]/){
+			$clen{"C.@t1[0]"}=@t1[2];
+			$clen{"C.@t1[0].R"}=@t1[2];
+			$cdep{"C.@t1[0]"}=@t1[3];
+			$cnam{"C.@t1[0]"}=@t1[1];
+			push(@cl,@t1[2]);
 		}
 	}
 	#open(FOPG,">$file1.gv");
@@ -218,7 +235,30 @@ sub getgraph{
 	$dwcg = $wcg->diameter;
 	print "$dwcg\n";
 	@lpwcg = $wcg->longest_path;
-	print join ",", @lpwcg, "\n";
-
+	#print join ",", @lpwcg, "\n";
+	$gvlpwcg= GraphViz->new();
+	for($c=0;$c<$#lpwcg;$c++){
+		$u=@lpwcg[$c];	
+		$v=@lpwcg[$c+1];
+		$d=$edge_wcg{$u.$v};
+		$l=$clen{$u};
+		if($l>10){	
+			foreach $sl (@seenl) {if($sl==$l){
+				open(GVLP,">$file1.lp.png");
+				print GVLP $gvlpwcg->as_png;
+				close GVLP;
+				exit;
+				}
+			}
+			push(@seenl,$l);
+			$totall+=$l;
+			print "$u-$v\t$d\t$l\t$totall\n";	
+			$gvlpwcg->add_node($u, label => $u,color=>'grey');
+			$gvlpwcg->add_node($v, label => $v,color=>'grey');
+			$gvlpwcg->add_edge($u=>$v,label=>$totall,color=>'orange',style=>'bold');			
+		}
+	}		
+	#@apwcg = $wucg->articulation_points;
+	#print "Alphaville articulation points = @apwucg\n";
 	close F;
 }
