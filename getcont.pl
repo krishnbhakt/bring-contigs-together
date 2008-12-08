@@ -242,7 +242,7 @@ sub getgraph{
 		$v=@lpwcg[$c+1];
 		$d=$edge_wcg{$u.$v};
 		$l=$clen{$u};
-		if($l>10){	
+		if($l<	0){	
 			foreach $sl (@seenl) {if($sl==$l){
 				open(GVLP,">$file1.lp.png");
 				print GVLP $gvlpwcg->as_png;
@@ -258,7 +258,7 @@ sub getgraph{
 			$gvlpwcg->add_edge($u=>$v,label=>$totall,color=>'orange',style=>'bold');			
 		}
 	}		
-	#@apwcg = $wucg->articulation_points;
-	#print "Alphaville articulation points = @apwucg\n";
+	@apwcg = $wucg->articulation_points;
+	print "Contig Graph	 articulation points = @apwucg\n";
 	close F;
 }
