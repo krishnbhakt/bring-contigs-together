@@ -226,6 +226,53 @@ sub getgraph{
 	}
 	open(FOPG,">$file1.gv.png");
 	print FOPG $g->as_png;
+	$APSP = $wcg->APSP_Floyd_Warshall;
+
+	print "Graph: ", $wcg->stringify(), "\n";
+	my @v = sort $wcg->vertices();
+	print "Vertices: @v\n";
+
+	# find and remove all cycles
+	while( my @cyc = $wcg->find_a_cycle() ) {
+		print "\nFound cycle: @cyc\n";
+		my $apsp = $wcg->APSP_Floyd_Warshall();
+		my %dist = map { $_ => $apsp->path_length('a',$_) } @cyc;
+		my $far = (sort { $dist{$a} <=> $dist{$b} } keys %dist )[-1];
+		print "Farthest vertex is $far\n";
+		CYC: for my $v ( @cyc ) {
+			next if $v eq $far;
+			next unless $wcg->has_edge($far,$v);
+			print "Remove edge (${far}->$v)\n";
+			$wcg->delete_edge($far,$v);
+			print "Graph is now: ", $wcg->stringify(), "\n";
+			last CYC;
+		}
+	}
+	foreach my $v ( $APSP->vertices ) { printf "%-9s ", "$v" } print "\n";
+		foreach my $u ( $APSP->vertices ) {
+			print "$u: ";
+			foreach my $v ( $APSP->vertices ) {
+				my $w = $APSP->get_attribute("weight", $u, $v);
+				if (defined $w) {
+					my $p = $APSP->get_attribute("path", $u, $v);
+				printf "(%-5s)=%d ", "@$p", $w
+				} 
+				else {
+					printf "%-9s ", "-"
+				}
+		}
+		print "\n"
+	}
+	close F;
+}
+
+sub dump {
+	#$SSSP = $wcg->SPT_Dijkstra;
+	#print "$v1\t$v2\t$rv1\t$rv2\n$sptg\n";
+	#$SSSP = $wucg->SSSP_Dijkstra($v2);
+	#$SSSP = $wucg->SSSP_Dijkstra("C.1");
+	#@apwcg = $wucg->articulation_points;
+	#print "Contig Graph	 articulation points = @apwucg\n";
 	#use Graph::Traversal::DFS;
     	#$b = Graph::Traversal::BFS->new($cg,%opt);
 	#$b = Graph::Traversal::DFS->new($ucg);
@@ -238,53 +285,6 @@ sub getgraph{
 	#	print "@topo[$c]\n";	
 	#}		
 	#$SSSP = $wcg->SPT_Bellman_Ford;
-	$APSP = $wcg->APSP_Floyd_Warshall;
-
-print "Graph: ", $wcg->stringify(), "\n";
-my @v = sort $wcg->vertices();
-print "Vertices: @v\n";
-
-# find and remove all cycles
-while( my @cyc = $wcg->find_a_cycle() ) {
-print "\nFound cycle: @cyc\n";
-my $apsp = $wcg->APSP_Floyd_Warshall();
-my %dist = map { $_ => $apsp->path_length('a',$_) } @cyc;
-my $far = (sort { $dist{$a} <=> $dist{$b} } keys %dist )[-1];
-print "Farthest vertex is $far\n";
-CYC: for my $v ( @cyc ) {
-next if $v eq $far;
-next unless $wcg->has_edge($far,$v);
-print "Remove edge (${far}->$v)\n";
-$wcg->delete_edge($far,$v);
-print "Graph is now: ", $wcg->stringify(), "\n";
-last CYC;
-}
-}
-
-	foreach my $v ( $APSP->vertices ) { printf "%-9s ", "$v" } print "\n";
-	foreach my $u ( $APSP->vertices ) {
-	print "$u: ";
-	foreach my $v ( $APSP->vertices ) {
-	my $w = $APSP->get_attribute("weight", $u, $v);
-	if (defined $w) {
-	my $p = $APSP->get_attribute("path", $u, $v);
-	printf "(%-5s)=%d ", "@$p", $w
-	} else {
-	printf "%-9s ", "-"
-	}
-	}
-	print "\n"
-	}
-	#$SSSP = $wcg->SPT_Dijkstra;
-	#print "$v1\t$v2\t$rv1\t$rv2\n$sptg\n";
-	#$SSSP = $wucg->SSSP_Dijkstra($v2);
-	#$SSSP = $wucg->SSSP_Dijkstra("C.1");
-	#@apwcg = $wucg->articulation_points;
-	#print "Contig Graph	 articulation points = @apwucg\n";
-	close F;
-}
-
-sub dump {
 	foreach my $u ( $SSSP->vertices ) {
 		#print "$u - ",$SSSP->get_vertex_attribute($u, 'weight')," - ", $SSSP->get_vertex_attribute($u, 'p'), "\n"
 	}
