@@ -5,7 +5,7 @@ $file1=shift @ARGV;
 $file2=shift @ARGV;
 open(F1,$file1);
 open(F2,$file2);
-$length1=25;
+$length1=50;
 $length2=$length1;
 
 #getgraph();
@@ -44,6 +44,8 @@ sub printconcatstring {
 		        $node{$v1}++;
 			$node{$v2}++;
 			$label="$e1->$e2($readcnt)";
+			($namen50s,$n50s)=ga("N",50);
+
 			#$e1=10;$e2=10;#get other loops out
 			if($e1==3 && $e2==5){
 				
@@ -60,7 +62,7 @@ sub printconcatstring {
 				#print length($fastest1).$length1.length($fastest2).$length2."\n";
 				if(length($fas1)==$length1 && length($fas2)==$length2){
 					print ">FF.$cnam{$v1}.$e1.$cnam{$v2}.$e2\t$v1->$node{$v1}->$clen{$v1}->$cdep{$v1}\t$v2->$node{$v2}->$clen{$v2}->$cdep{$v2}\t$label\n";
-					print $fas1."\n".$fas2."\n";
+					print $fas1.$n50s.$fas2."\n";
 				}			
 			}
 			if($e1==3 && $e2==3){
@@ -80,7 +82,7 @@ sub printconcatstring {
 				$rrfastest2=reverse($rfastest2);
 				if(length($fas1)==$length1 && length($fas2)==$length2){
 					print ">FR.$cnam{$v1}.$e1.$cnam{$v2}.$e2\t$v1->$node{$v1}->$clen{$v1}->$cdep{$v1}\t$v2->$node{$v2}->$clen{$v2}->$cdep{$v2}\t$label\n";
-					print $fas1."\n".$rfas2."\n";
+					print $fas1.$n50s.$rfas2."\n";
 				}			
 			}
 			if($e1==5 && $e2==3){
@@ -101,7 +103,7 @@ sub printconcatstring {
 				$rrfastest2=reverse($rfastest2);
 				if(length($fas1)==$length1 && length($fas2)==$length2){
 					print ">RR.$cnam{$v1}.$e1.$cnam{$v2}.$e2\t$v1->$node{$v1}->$clen{$v1}->$cdep{$v1}\t$v2->$node{$v2}->$clen{$v2}->$cdep{$v2}\t$label\n";
-					print $rrfas1."\n".$rfas2."\n";
+					print $rrfas1.$n50s.$rfas2."\n";
 				}			
 			}			
 			if($e1==5 && $e2==5){
@@ -120,7 +122,7 @@ sub printconcatstring {
 				$rrfastest2=reverse($rfastest2);
 				if(length($fas1)==$length1 && length($fas2)==$length2){
 					print ">RF.$cnam{$v1}.$e1.$cnam{$v2}.$e2\t$v1->$node{$v1}->$clen{$v1}->$cdep{$v1}\t$v2->$node{$v2}->$clen{$v2}->$cdep{$v2}\t$label\n";
-					print $rrfas1."\n".$fas2."\n";
+					print $rrfas1.$n50s.$fas2."\n";
 				}			
 			}
 			#print "@seqname[@t1[1]-1]\n@seq[@t1[1]-1]\n";
@@ -315,3 +317,57 @@ sub dump {
 		}
 	}		
 }
+
+
+sub randseq {
+	@base=qw/A T G C/;
+	$cnt=250;
+	$ts=4;
+
+	for($c=0;$c<$ts;$c++){
+		$n="$c.".time;
+		($n1,$s1)=gs($n);
+		($n2,$s2)=ga("ATG");
+		$tn.=$n1.$n2;
+		$s.=$s1.$s2;
+	
+	}
+print ">$tn\n$s\n";
+}
+
+
+sub gs{
+	my $c;
+	my $seq;
+	my $b;
+	my %atgc;
+	my $name=shift;
+	while($c<$cnt){
+		$c++;
+		$b=@base[rand(int(4))];
+		$seq.=$b;
+		$atgc{$b}++;
+	}
+	$name="Seq.$name\t";
+	foreach (keys %atgc){$name.="$_=>$atgc{$_}\t";}
+	return ($name,$seq);
+}
+
+sub ga{
+	my $c;
+	my $seq;
+	my $b;
+	my %atgc;
+	my $name=shift;
+	my $cnt=shift;
+	while($c<$cnt){
+		$c++;
+		$b=$name;
+		$seq.=$b;
+		$atgc{$b}++;
+	}
+	$name=">Seq.$name\t";
+	foreach (keys %atgc){$name.="$_=>$atgc{$_}\t";}
+	return ($name,$seq);
+}
+
